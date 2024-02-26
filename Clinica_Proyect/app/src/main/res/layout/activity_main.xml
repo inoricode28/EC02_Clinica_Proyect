@@ -11,8 +11,8 @@
         android:id="@+id/button3"
         android:layout_width="263dp"
         android:layout_height="50dp"
-        android:layout_marginTop="60dp"
-        android:text="Button"
+        android:layout_marginTop="70dp"
+        android:text="@string/valregistro"
         app:icon="@drawable/baseline_assignment_ind_24"
         app:iconGravity="textStart"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,8 +23,8 @@
         android:id="@+id/button4"
         android:layout_width="254dp"
         android:layout_height="45dp"
-        android:layout_marginTop="80dp"
-        android:text="Button"
+        android:layout_marginTop="60dp"
+        android:text="@string/btnformulario"
         app:icon="@drawable/baseline_assignment_24"
         app:iconGravity="textStart"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,11 +36,12 @@
         android:id="@+id/button5"
         android:layout_width="264dp"
         android:layout_height="52dp"
-        android:layout_marginTop="80dp"
-        android:text="Button"
+        android:layout_marginTop="64dp"
+        android:text="@string/btnlistado"
         app:icon="@drawable/baseline_assignment_turned_in_24"
         app:iconGravity="textStart"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
 
@@ -53,5 +54,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_add_home_work_24" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="120dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        app:srcCompat="@android:drawable/ic_lock_idle_lock" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

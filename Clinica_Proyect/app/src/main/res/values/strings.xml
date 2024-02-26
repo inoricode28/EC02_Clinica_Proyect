@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Clinica_Proyect</string>
+    <string name="valregistro">REGISTRO</string>
+    <string name="btnregistro">REGISTRO</string>
+    <string name="btnformulario">FORMULARIO</string>
+    <string name="btnlistado">LISTADO</string>
 </resources>
