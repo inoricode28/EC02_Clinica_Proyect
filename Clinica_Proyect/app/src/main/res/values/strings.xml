@@ -4,4 +4,5 @@
     <string name="btnregistro">REGISTRO</string>
     <string name="btnformulario">FORMULARIO</string>
     <string name="btnlistado">LISTADO</string>
+    <string name="dni">DNI</string>
 </resources>
