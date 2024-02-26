@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#4BC3D3"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/button3"
         android:layout_width="263dp"
         android:layout_height="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="60dp"
         android:text="Button"
         app:icon="@drawable/baseline_assignment_ind_24"
         app:iconGravity="textStart"
@@ -22,7 +23,7 @@
         android:id="@+id/button4"
         android:layout_width="254dp"
         android:layout_height="45dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="80dp"
         android:text="Button"
         app:icon="@drawable/baseline_assignment_24"
         app:iconGravity="textStart"
@@ -47,7 +48,7 @@
         android:id="@+id/imageView"
         android:layout_width="110dp"
         android:layout_height="94dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
