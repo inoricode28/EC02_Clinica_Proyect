@@ -6,44 +6,51 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.utils.widget.ImageFilterView
-        android:id="@+id/imageFilterView"
-        android:layout_width="93dp"
-        android:layout_height="82dp"
-        android:layout_marginTop="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@android:mipmap/sym_def_app_icon" />
-
     <Button
         android:id="@+id/button3"
-        android:layout_width="188dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="60dp"
+        android:layout_width="263dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
         android:text="Button"
+        app:icon="@drawable/baseline_assignment_ind_24"
+        app:iconGravity="textStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageFilterView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="190dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="50dp"
+        android:layout_width="254dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="60dp"
         android:text="Button"
+        app:icon="@drawable/baseline_assignment_24"
+        app:iconGravity="textStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="185dp"
-        android:layout_height="51dp"
+        android:layout_width="264dp"
+        android:layout_height="52dp"
         android:layout_marginTop="80dp"
         android:text="Button"
+        app:icon="@drawable/baseline_assignment_turned_in_24"
+        app:iconGravity="textStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="110dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_add_home_work_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
