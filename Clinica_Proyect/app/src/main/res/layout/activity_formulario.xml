@@ -10,7 +10,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
         android:text="Formulario"
         android:textSize="24sp"
         android:textStyle="bold|italic"
@@ -20,14 +20,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/edtDNI"
         android:layout_width="320dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
-        android:hint="DNI"
+        android:hint="@string/dni"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -35,11 +35,11 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/edtNOMBRE"
         android:layout_width="320dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="NOMBRE"
@@ -47,14 +47,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/edtDNI" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/edtAPELLIDOS"
         android:layout_width="320dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="APELLIDOS"
@@ -62,28 +62,28 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/edtNOMBRE" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/edtCORREO"
         android:layout_width="320dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="CORREO"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/edtAPELLIDOS" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/edtCONTRASENA"
         android:layout_width="320dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="CONTRASEÑA"
@@ -91,20 +91,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/edtCORREO" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:text="Sexo:"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.152"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/edtCONTRASENA" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -117,14 +117,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/rb_hombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Hombre" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/rb_mujer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -158,29 +158,28 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3">
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/cbx_deporte"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Deporte" />
 
         <CheckBox
-            android:id="@+id/checkBox2"
+            android:id="@+id/cbx_pintura"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Pintura" />
 
         <CheckBox
-            android:id="@+id/checkBox3"
+            android:id="@+id/cbxotro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Otros" />
     </LinearLayout>
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/edt_ingresar_hobbie"
         android:layout_width="320dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="4dp"
+        android:layout_height="48dp"
         android:ems="10"
         android:hint="Ingresa tu hobbie"
         android:inputType="text"
@@ -193,9 +192,9 @@
         android:id="@+id/btn_acceder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         android:text="Acceder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_ingresar_hobbie" />
 </androidx.constraintlayout.widget.ConstraintLayout>
