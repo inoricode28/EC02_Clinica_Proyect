@@ -12,10 +12,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.btnregistro.setOnClickListener(this)
 
     }
 
     override fun onClick(v: View?) {
-        TODO("Not yet implemented")
+        startActivity(Intent(application, FormActivity::class.java))
     }
 }
