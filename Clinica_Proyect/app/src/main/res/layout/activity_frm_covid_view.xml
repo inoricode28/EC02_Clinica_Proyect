@@ -6,4 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".FrmCovidViewActivity">
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="RESULTADOS"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvdatos"
+        android:layout_width="320dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btnregistro"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Volver"
+        app:icon="@drawable/back"
+        app:iconGravity="textStart"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="455dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
