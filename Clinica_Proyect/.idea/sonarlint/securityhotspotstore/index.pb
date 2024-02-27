@@ -5,3 +5,5 @@ D
 app/build.gradle.kts,d\2\d2a4383452aad84a18429a5844d31330a012a9e6
 q
 Aapp/src/main/java/pe/edu/idat/clinica_proyect/FrmCovidActivity.kt,2\7\27b2ff1e1f417cc0ea8b896e5841ca088fd5715a
+u
+Eapp/src/main/java/pe/edu/idat/clinica_proyect/FrmCovidViewActivity.kt,7\5\7530fadb5133bad182517fc8b4e99445b1aee447
