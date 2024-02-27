@@ -74,4 +74,5 @@ class ListbookActivity : AppCompatActivity() {
             )
         )
     }
+    // fin
 }
