@@ -5,4 +5,5 @@
     <string name="btnformulario">FORMULARIO</string>
     <string name="btnlistado">LISTADO</string>
     <string name="dni">DNI</string>
+    <string name="titulolista">LISTA DE LIBROS MEDICOS</string>
 </resources>
