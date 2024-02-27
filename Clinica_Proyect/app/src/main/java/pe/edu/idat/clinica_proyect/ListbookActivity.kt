@@ -21,15 +21,28 @@ class ListbookActivity : AppCompatActivity() {
     }
 
     private fun listaElementos(): List<Item> {
-        val lista = ArrayList<Item>()
-        var i = 0
-        while (i < 20) {
-            // Crear elementos de ejemplo con título, descripción y fecha de publicación
-            val item = Item("Libro $i", "Descripción del libro $i", "2024-02-${i + 1}")
-            lista.add(item)
-            i++
-        }
-        return lista
-        //Modificar
+        return listOf(
+            Item(
+                "Harrison's Principles of Internal Medicine",
+                "Este libro es una referencia fundamental para los médicos que buscan información detallada sobre la medicina interna.",
+                "2020-10-15"
+            ),
+            Item(
+                "Gray's Anatomy for Students",
+                "Una versión simplificada del clásico de la anatomía humana, diseñada específicamente para estudiantes de medicina.",
+                "2019-08-20"
+            ),
+            Item(
+                "Robbins Basic Pathology",
+                "Un libro esencial para comprender las bases patológicas de las enfermedades.",
+                "2018-05-12"
+            ),
+            Item(
+                "Current Medical Diagnosis and Treatment",
+                "Una guía clínica actualizada que aborda el diagnóstico y tratamiento de una amplia gama de enfermedades.",
+                "2021-03-30"
+            ),
+
+        )
     }
 }
