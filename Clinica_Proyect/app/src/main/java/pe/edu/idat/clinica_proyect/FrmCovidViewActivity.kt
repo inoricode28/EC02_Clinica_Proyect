@@ -10,5 +10,8 @@ class FrmCovidViewActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityFrmCovidBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+//        llamar los datos y mostrarlo en el covidviewActivity
+
     }
 }
