@@ -24,6 +24,13 @@ class FormActivity : AppCompatActivity() {
             }
         }
 
+        val btn_volver_form = binding.btnVolverFormulario
+
+        btn_volver_form.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
         binding.cbxotro.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked){
                 binding.edtIngresarHobbie.visibility = EditText.VISIBLE
@@ -79,7 +86,7 @@ class FormActivity : AppCompatActivity() {
             putExtra("apellidos", apellidos)
             putExtra("correo", correo)
             putExtra("contraseña", contraseña)
-            putExtra("genero", if (binding.rbHombre.isChecked) "Hombre" else "Mujer")
+            putExtra("genero", if (binding.rbHombre.isChecked || binding.rbMujer.isChecked) "Hombre" else "Mujer")
             val hobbies = mutableListOf<String>()
             if (binding.cbxDeporte.isChecked) hobbies.add("Deporte")
             if (binding.cbxPintura.isChecked) hobbies.add("Pintura")

@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvdatos"
+        android:id="@+id/edtdatos"
         android:layout_width="320dp"
         android:layout_height="350dp"
         android:layout_marginTop="16dp"
@@ -30,13 +30,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
-        android:id="@+id/btnregistro"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:text="Volver"
-        app:icon="@drawable/back"
-        app:iconGravity="textStart"
-        tools:layout_editor_absoluteX="126dp"
-        tools:layout_editor_absoluteY="455dp" />
+        android:id="@+id/btn_regresa_covid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Regresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtdatos" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

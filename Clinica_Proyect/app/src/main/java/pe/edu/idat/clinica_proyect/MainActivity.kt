@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.btnregistro.setOnClickListener(this)
+        binding.btnRegistro.setOnClickListener(this)
 
     }
 

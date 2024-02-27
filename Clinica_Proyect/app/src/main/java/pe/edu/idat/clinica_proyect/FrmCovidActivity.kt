@@ -13,7 +13,7 @@ class FrmCovidActivity : AppCompatActivity() {
         binding = ActivityFrmCovidBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val btnRegistro = binding.btnregistro
+        val btnRegistro = binding.btnRegistro
         btnRegistro.setOnClickListener {
             if (validarDatos()){
                 mostrarDatos()
@@ -21,7 +21,16 @@ class FrmCovidActivity : AppCompatActivity() {
                 Toast.makeText(this, "Completar todos los datos", Toast.LENGTH_SHORT).show()
             }
         }
+
+        val btn_volver_vie = binding.btnCodVolver
+
+        btn_volver_vie.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
+
+
 
     private fun mostrarDatos() : Boolean {
         return (binding.chk1.isChecked || binding.chk2.isChecked || binding.chk3.isChecked || binding.chk4.isChecked || binding.chk5.isChecked  || binding.chk6.isChecked) &&

@@ -14,7 +14,7 @@ class FormViewActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val dni = intent.getStringExtra("dni")
-        val nombre = intent.getStringExtra("nombres")
+        val nombre = intent.getStringExtra("nombre")
         val apellidos = intent.getStringExtra("apellidos")
         val correo = intent.getStringExtra("correo")
         val genero = intent.getStringExtra("genero")
@@ -22,7 +22,7 @@ class FormViewActivity : AppCompatActivity() {
         val btnregresar = binding.btnretrocederView
 
         val resultado = "DNI: $dni\nNombres: $nombre\nApellidos: $apellidos\nCorreo: $correo\nGénero: $genero\nHobbies: $hobbies"
-        binding.tvdatos.text = resultado
+        binding.edtdatos.text = resultado
 
         btnregresar.setOnClickListener {
             val intent = Intent(this, FormActivity::class.java)

@@ -6,18 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".FrmCovidActivity">
 
-    <Button
-        android:id="@+id/btnBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/md_green_A200"
-        android:text="Volver"
-        android:textColor="@color/md_black_1000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.021"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="4dp" />
-
     <TextView
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
@@ -25,97 +13,96 @@
         android:text="CUESTIONARIO COVID-19"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="-580dp"/>
+        tools:layout_editor_absoluteY="48dp" />
 
     <TextView
         android:id="@+id/quest1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-520dp"
         android:text="1.Marca tus sintomas"
         android:textSize="15sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.501" />
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/quest2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/quest1"
-        app:layout_constraintVertical_bias="0.18">
+        app:layout_constraintTop_toBottomOf="@+id/quest1">
 
         <CheckBox
             android:id="@+id/chk1"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:text="Disminucion del gusto o olfato" />
+            android:text="Disminucion del gusto o olfato"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <CheckBox
             android:id="@+id/chk2"
             android:layout_width="match_parent"
-            android:layout_height="28dp"
-            android:text="Tos" />
+            android:layout_height="30dp"
+            android:text="Tos"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <CheckBox
             android:id="@+id/chk3"
             android:layout_width="match_parent"
-            android:layout_height="33dp"
-            android:text="Dolor de garganta" />
+            android:layout_height="30dp"
+            android:text="Dolor de garganta"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <CheckBox
             android:id="@+id/chk4"
             android:layout_width="match_parent"
-            android:layout_height="31dp"
-            android:text="Congestion nasal" />
+            android:layout_height="30dp"
+            android:text="Congestion nasal"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <CheckBox
             android:id="@+id/chk5"
             android:layout_width="match_parent"
-            android:layout_height="34dp"
-            android:text="Fiebre" />
+            android:layout_height="30dp"
+            android:text="Fiebre"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <CheckBox
             android:id="@+id/chk6"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:text="Ninguno" />
+            android:text="Ninguno"
+            tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/quest2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-90dp"
+        android:layout_marginTop="4dp"
         android:text="2.Tienes fiebre mayor a 37°?"
         android:textSize="15sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintHorizontal_bias="0.566"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="240dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/quest2">
 
@@ -124,152 +111,172 @@
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_weight="2"
-            android:text="Si" />
+            android:text="Si"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <RadioButton
             android:id="@+id/no1"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_weight="5"
-            android:text="No" />
+            android:text="No"
+            tools:ignore="TouchTargetSizeCheck" />
+
     </LinearLayout>
 
     <TextView
         android:id="@+id/quest3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="4dp"
         android:text="3.Vives solo en casa?"
         android:textSize="15sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintHorizontal_bias="0.284"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="260dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/quest3"
-        tools:layout_editor_absoluteX="16dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quest3">
 
         <RadioButton
             android:id="@+id/yes2"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_weight="2"
-            android:text="Si" />
+            android:text="Si"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <RadioButton
             android:id="@+id/no2"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_weight="5"
-            android:text="No" />
+            android:text="No"
+            tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/quest4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="4dp"
         android:text="4.Vives con un adulto mayor en casa?"
         android:textSize="15sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
     <LinearLayout
         android:id="@+id/linearLayout5"
         android:layout_width="260dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/quest4"
-        tools:layout_editor_absoluteX="16dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quest4">
 
         <RadioButton
             android:id="@+id/yes3"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_weight="2"
-            android:text="Si" />
+            android:text="Si"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <RadioButton
             android:id="@+id/no3"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_weight="5"
-            android:text="No" />
+            android:text="No"
+            tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/quest5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="240dp"
         android:text="5.Cuentas con los siguientes servicios en casa?"
         android:textSize="15sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintHorizontal_bias="0.141"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.496" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
 
     <LinearLayout
         android:id="@+id/linearLayout6"
         android:layout_width="109dp"
         android:layout_height="124dp"
+        android:layout_marginTop="4dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/quest5"
-        app:layout_constraintVertical_bias="0.01999998">
+        app:layout_constraintTop_toBottomOf="@+id/quest5">
 
         <CheckBox
             android:id="@+id/chk7"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:text="Luz" />
+            android:text="Luz"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <CheckBox
             android:id="@+id/chk8"
             android:layout_width="match_parent"
-            android:layout_height="28dp"
-            android:text="Agua" />
+            android:layout_height="30dp"
+            android:text="Agua"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <CheckBox
             android:id="@+id/chk9"
             android:layout_width="match_parent"
-            android:layout_height="33dp"
-            android:text="Internet" />
+            android:layout_height="30dp"
+            android:text="Internet"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <CheckBox
             android:id="@+id/chk10"
             android:layout_width="match_parent"
-            android:layout_height="31dp"
-            android:text="Cable" />
+            android:layout_height="30dp"
+            android:text="Cable"
+            tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnregistro"
+        android:id="@+id/btn_registro"
         android:layout_width="150dp"
         android:layout_height="50dp"
+        android:layout_marginTop="8dp"
         android:text="Enviar"
         app:icon="@drawable/enviar"
         app:iconGravity="textStart"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="634dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+    <Button
+        android:id="@+id/btn_cod_volver"
+        android:layout_width="119dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:text="Volver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_registro" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
