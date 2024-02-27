@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Clinica_Proyect"
         tools:targetApi="31">
         <activity
+            android:name=".FrmCovidActivity"
+            android:exported="false" />
+        <activity
             android:name=".ListbookActivity"
             android:exported="true" />
         <activity
